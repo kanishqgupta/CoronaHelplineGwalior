@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#47D476</color>
+    <color name="colorPrimaryDark">#47D476</color>
+    <color name="colorAccent">#47D476</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="backgroundColor">#FCFCFC</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="rippleColor">#237739</color>
+    <color name="textColor">#222222</color>
+    <color name="buttonColor">#34AF54</color>
+    <color name="maincard">#32CEFFD1</color>
+</resources>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Corona Helpline Gwalior</string>
+    <string name="become"><u>Become a Volunteer >></u></string>
+
+    <string-array name="types">
+        <item>Money</item>
+        <item>Food or Essential Items</item>
+    </string-array>
+</resources>

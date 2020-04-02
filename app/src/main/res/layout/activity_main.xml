@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardview"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/maincard">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gwaliorcase"
+                android:textSize="20dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="#000"
+                android:layout_marginTop="5dp"
+                android:text="Gwalior Live Cases : 0" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gwaliorcase_rec"
+                android:textSize="20dp"
+                android:layout_below="@id/gwaliorcase"
+                android:textColor="#000"
+                android:layout_marginLeft="5dp"
+                android:text="Gwalior Cases Recovered : 1" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gwaliorcasetotal"
+                android:textSize="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@id/gwaliorcase_rec"
+                android:textColor="#000"
+                android:text="Gwalior Cases Total : 1" />
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gwaliorcasetotal"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:background="@drawable/square_btn"
+                    android:id="@+id/safet_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/open_sans"
+                    android:textAllCaps="false"
+                    android:layout_weight="3"
+                    android:layout_marginRight="2dp"
+                    android:textSize="20sp"
+                    android:text=" Symptoms "/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:background="@drawable/square_btn"
+                    android:id="@+id/prec_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/open_sans"
+                    android:textAllCaps="false"
+                    android:layout_marginRight="2dp"
+                    android:textSize="20sp"
+                    android:layout_weight="3"
+                    android:text=" Precautions "/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:background="@drawable/square_btn"
+                    android:id="@+id/news_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/open_sans"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    android:layout_weight="3"
+                    android:layout_marginRight="2dp"
+                    android:text=" News "/>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DONATE"
+        android:layout_below="@id/cardview"
+        android:textColor="#fff"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_circle" />
+    <Button
+        android:id="@+id/b11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REQUEST HELP"
+        android:layout_below="@id/b1"
+        android:textColor="#fff"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_circle" />
+
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BECOME A VOLUNTEER"
+        android:layout_below="@id/b11"
+        android:textColor="#fff"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_circle" />
+
+    <Button
+        android:id="@+id/b3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VOLUNTEER LOGIN"
+        android:layout_below="@id/b2"
+        android:textColor="#fff"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_circle" />
+
+    <Button
+        android:id="@+id/b4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CALL HELPLINE"
+        android:layout_below="@id/b3"
+        android:textColor="#fff"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_circle" />
+
+    <Button
+        android:id="@+id/b5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ABOUT"
+        android:layout_below="@id/b4"
+        android:textColor="#fff"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_circle" />
+
+</RelativeLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardview"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/maincard">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/welcome_msg"
+                android:textSize="20dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="#000"
+                android:layout_marginTop="5dp"
+                android:text="WELCOME : KANIHSQ GUPTA" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/task_number"
+                android:textSize="20dp"
+                android:layout_below="@id/welcome_msg"
+                android:textColor="#000"
+                android:layout_marginLeft="5dp"
+                android:text="Today's Task : 1" />
+
+
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/task_text"
+                android:text="Vinay Nagar"
+                android:textSize="25dp"
+                android:textColor="#000"
+                android:layout_marginLeft="5dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/task_text"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:id="@+id/tast_qnt"
+                android:text="Items number : 10 packets" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/task_status"
+                android:textSize="20dp"
+                android:layout_below="@id/tast_qnt"
+                android:textColor="#000"
+                android:layout_marginLeft="5dp"
+                android:text="Status : Completed" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/confirm_btn"
+                android:layout_below="@id/task_status"
+                android:layout_marginTop="5dp"
+                android:text="Completed"
+                android:background="@drawable/square_btn"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                />
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/task_text"
+                android:text="Anand Nagar"
+                android:textSize="25dp"
+                android:textColor="#000"
+                android:layout_marginLeft="5dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/task_text"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:id="@+id/tast_qnt1"
+                android:text="Items number : 50 packets" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/task_status1"
+                android:textSize="20dp"
+                android:layout_below="@id/tast_qnt1"
+                android:textColor="#000"
+                android:layout_marginLeft="5dp"
+                android:text="Status : Completed" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/confirm_btn1"
+                android:layout_below="@id/task_status1"
+                android:layout_marginTop="5dp"
+                android:text="Confirm"
+                android:background="@drawable/square_btn"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                />
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

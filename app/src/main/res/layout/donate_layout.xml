@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/name_box"
+                android:layout_marginTop="30dp"
+                android:drawableLeft="@drawable/ic_account_circle_green_100_24dp"
+                android:drawablePadding="10dp"
+                android:layout_marginLeft="10dp"
+                android:hint="Enter Your Name"
+                />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/phone_box"
+                android:layout_marginTop="30dp"
+                android:drawableLeft="@drawable/ic_call_green_100_24dp"
+                android:drawablePadding="10dp"
+                android:layout_marginLeft="10dp"
+                android:hint="Enter Your Phone Number"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textview"
+                android:text="Select type"
+                android:textSize="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                />
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:id="@+id/type_box"
+                android:layout_marginTop="5dp"
+                android:drawablePadding="10dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/money_box"
+                android:layout_marginTop="30dp"
+                android:drawableLeft="@drawable/ic_sentiment_very_satisfied_green_100_24dp"
+                android:drawablePadding="10dp"
+                android:layout_marginLeft="10dp"
+                android:hint="Enter Amount Here"
+                />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/item_box"
+                android:layout_marginTop="30dp"
+                android:drawableLeft="@drawable/ic_sentiment_very_satisfied_green_100_24dp"
+                android:drawablePadding="10dp"
+                android:layout_marginLeft="10dp"
+                android:hint="Enter Item Name."
+                />
+
+            <Button
+                android:id="@+id/btn_donate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Donate and Help us."
+                android:drawableRight="@drawable/ic_verified_user_white_24dp"
+                android:drawablePadding="10dp"
+                android:textColor="#fff"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/rounded_circle" />
+
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

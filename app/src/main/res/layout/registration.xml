@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+
+    <ScrollView
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="16sp"
+                android:layout_marginRight="16sp"
+                android:layout_marginBottom="16sp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:orientation="vertical"
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_marginTop="20sp"
+                        android:layout_marginStart="16sp"
+                        android:layout_marginBottom="16sp"
+                        android:text="REGISTRATION"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/opensans_bold"
+                        android:textColor="@android:color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/signup_invalid_cred"
+                        android:visibility="invisible"
+                        android:layout_gravity="center"
+                        android:gravity="end"
+                        android:layout_weight="1"
+                        android:layout_marginTop="16sp"
+                        android:layout_marginEnd="16sp"
+                        android:text="Wrong Detials"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/opensans_bold"
+                        android:textColor="@android:color/holo_red_light"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginBottom="16sp"
+                    android:background="@drawable/edittext_fff"
+                    android:layout_marginRight="16sp"
+                    android:layout_marginLeft="16sp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.cardview.widget.CardView
+                        app:cardCornerRadius="8sp"
+                        android:layout_weight="6"
+                        app:cardElevation="0dp"
+                        android:layout_margin="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_marginStart="1sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:adjustViewBounds="true"
+                                android:src="@drawable/ic_avatar"
+                                android:layout_width="match_parent"
+                                android:layout_height="24sp"
+                                android:scaleType="center"/>
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/signup_firstname"
+                        android:background="@android:color/transparent"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/opensans_semibold"
+                        android:layout_weight="1"
+                        android:paddingRight="16sp"
+                        android:paddingLeft="16sp"
+                        android:inputType="text"
+                        android:hint="FULL NAME"
+                        android:layout_width="match_parent"
+                        android:layout_height="?android:attr/actionBarSize" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginBottom="16sp"
+                    android:background="@drawable/edittext_fff"
+                    android:layout_marginRight="16sp"
+                    android:layout_marginLeft="16sp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.cardview.widget.CardView
+                        app:cardCornerRadius="8sp"
+                        android:layout_weight="6"
+                        app:cardElevation="0dp"
+                        android:layout_margin="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_marginStart="1sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:adjustViewBounds="true"
+                                android:src="@drawable/ic_login_username_icon"
+                                android:layout_width="match_parent"
+                                android:layout_height="24sp"
+                                android:scaleType="center"/>
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/email"
+                        android:background="@android:color/transparent"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/opensans_semibold"
+                        android:layout_weight="1"
+                        android:paddingRight="16sp"
+                        android:paddingLeft="16sp"
+                        android:inputType="text"
+                        android:hint="EMAIL"
+                        android:layout_width="match_parent"
+                        android:layout_height="?android:attr/actionBarSize" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginBottom="16sp"
+                    android:background="@drawable/edittext_fff"
+                    android:layout_marginRight="16sp"
+                    android:layout_marginLeft="16sp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.cardview.widget.CardView
+                        app:cardCornerRadius="8sp"
+                        android:layout_weight="6"
+                        app:cardElevation="0dp"
+                        android:layout_margin="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_marginStart="1sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:adjustViewBounds="true"
+                                android:src="@drawable/ic_phone"
+                                android:layout_width="match_parent"
+                                android:layout_height="24sp"
+                                android:scaleType="center"/>
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/signup_phone"
+                        android:background="@android:color/transparent"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/opensans_semibold"
+                        android:layout_weight="1"
+                        android:paddingRight="16sp"
+                        android:paddingLeft="16sp"
+                        android:inputType="phone"
+                        android:hint="PHONE"
+                        android:layout_width="match_parent"
+                        android:layout_height="?android:attr/actionBarSize" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginBottom="16sp"
+                    android:background="@drawable/edittext_fff"
+                    android:layout_marginRight="16sp"
+                    android:layout_marginLeft="16sp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.cardview.widget.CardView
+                        app:cardCornerRadius="8sp"
+                        android:layout_weight="6"
+                        app:cardElevation="0dp"
+                        android:layout_margin="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_marginStart="1sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:adjustViewBounds="true"
+                                android:src="@drawable/ic_phone"
+                                android:layout_width="match_parent"
+                                android:layout_height="24sp"
+                                android:scaleType="center"/>
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/signup_otp"
+                        android:background="@android:color/transparent"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/opensans_semibold"
+                        android:layout_weight="1"
+                        android:paddingRight="16sp"
+                        android:paddingLeft="16sp"
+                        android:inputType="number"
+                        android:hint="OTP"
+                        android:layout_width="match_parent"
+                        android:layout_height="?android:attr/actionBarSize" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginBottom="24sp"
+                    android:background="@drawable/edittext_fff"
+                    android:layout_marginRight="16sp"
+                    android:layout_marginLeft="16sp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.cardview.widget.CardView
+                        app:cardCornerRadius="8sp"
+                        android:layout_weight="3"
+                        app:cardElevation="0dp"
+                        android:layout_margin="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_marginStart="1sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:adjustViewBounds="true"
+                                android:src="@drawable/ic_login_password_icon"
+                                android:layout_width="match_parent"
+                                android:layout_height="24sp"
+                                android:scaleType="center"/>
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/signup_password"
+                        android:background="@android:color/transparent"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/opensans_semibold"
+                        android:layout_weight="1"
+                        android:paddingRight="16sp"
+                        android:paddingLeft="16sp"
+                        android:inputType="textPassword"
+                        android:imeOptions="actionDone"
+                        android:hint="PASSWORD"
+                        android:layout_width="match_parent"
+                        android:layout_height="?android:attr/actionBarSize" />
+
+                    <ImageView
+                        android:id="@+id/signup_password_toggle"
+                        android:layout_marginRight="8sp"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:layout_weight="3"
+                        android:src="@drawable/ic_remove_red_eye"
+                        android:layout_width="match_parent"
+                        android:layout_height="24sp" />
+
+                </LinearLayout>
+
+                <Button
+                    android:padding="10dp"
+                    android:id="@+id/sign_up_btn"
+                    android:layout_marginRight="16sp"
+                    android:layout_marginLeft="16sp"
+                    android:layout_marginBottom="24sp"
+                    android:background="@drawable/button_gradient_lo"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/opensans_bold"
+                    android:textSize="16sp"
+                    android:text="REGISTER NOW"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingStart="64sp"
+                    android:paddingEnd="64sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:padding="10dp"
+                    android:id="@+id/back_btn"
+                    android:layout_marginRight="16sp"
+                    android:layout_marginLeft="16sp"
+                    android:layout_marginBottom="24sp"
+                    android:background="@drawable/button_gradient_lo"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/opensans_bold"
+                    android:textSize="16sp"
+                    android:text="Back"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingStart="64sp"
+                    android:paddingEnd="64sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:paddingTop="16sp"
+                    android:paddingBottom="16sp"
+                    android:id="@+id/to_login_fragment"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
